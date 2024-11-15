@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Author: Esteban Rubén Mangas Calva
+W01 Assignment: Home Page
+11/13/2024
+Dessigning my home page.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Esteban Mangas</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Esteban Rubén Mangas Calva. Home page with basic info about me and starting point to showcase my assignments and proyects with dynamic web pages">
+    <meta name="author" content="Esteban Rubén Mangas Calva">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Esteban Mangas</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/esteban-mangas" title="Linkedin">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="Course WDD131">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/18?lang=eng#:~:text=8%20And%20it,abundantly%20upon%20you%3F"
+                title="Favorite Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img class="me" src="/images/profile.webp" alt="A picture of myself, Esteban Mangas. Age 28.">
+            <p>My name is Esteban Rubén Mangas Calva. I am from Querétaro, México and serve a mission in Oaxaca, México.
+                I have a small business with my wife Sara of personalized and creative stationary, agendas and vynil.
+                I'm a fan of Harry Potter,
+                Pokémon and Anime. I hope to work someday in a position or company related to my hoobies. I
+                am passionate about tech and videogames, and I love to learn more about programming and web development.
+            </p>
+            <h3>Querétaro, México</h3>
+            <img class="hometown" src="/images/aqueduct-of-queretaro.jpg"
+                alt="A picture of 'los Arcos', the most iconic landmark of Querétaro, México.">
+            <p>Querétaro is a state in the center of México. Querétaro de Arteaga, the state capital, is a city full of
+                beautiful and rich architecture like the aqueduct in the picture known as 'Los Arcos'. It is a place
+                with a great history fundamental for the overall country
+                history. Actually is a fast developing city thanks to the bloom of the nearshoring and the growing
+                companies that are investing in expanding its business in Querétaro and in the center of México.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_website_layout.asp" title="W3 Schools website layout">W3
+                        Schools website layout</a></li>
+                <li><a href="https://code.visualstudio.com/docs/languages/html#_formatting"
+                        title="VS Code HTML formatting">VS Code HTML formatting</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables"
+                        title="mdn web docs JS Variables">mdn web docs JS Variables</a></li>
+                <li><a href="https://www.siegemedia.com/contrast-ratio#" title="siegemedia contrast ratio">siegemedia
+                        contrast ratio</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Esteban Rubén Mangas Calva | México</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
