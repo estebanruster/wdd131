@@ -103,15 +103,17 @@ h3 {
 }
 
 p {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0.5rem;
 }
 
 ul {
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: auto;
     display: block;
-    text-align: center;
-    background-color: rgb(255, 165, 0);
+    text-align: justify;
+    /*border: 2px solid black;*/
+    max-width: fit-content;
+
 }
 
 li a {
@@ -124,6 +126,7 @@ li a {
     padding: 1rem;
     margin: 10px;
     box-sizing: content-box;
+    border-radius: 20px;
 }
 
 /*
