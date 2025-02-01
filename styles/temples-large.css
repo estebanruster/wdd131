@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+    header,
+    footer,
+    main {
+    max-width: 100%;
+    margin: auto;
+    /*border: 1px solid black;*/
+    padding: 1rem;
+}
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
