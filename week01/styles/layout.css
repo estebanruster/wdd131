@@ -16,6 +16,10 @@ footer {
     background-color: lightcoral;
 }
 
+header {
+    border-radius: 20px;
+}
+
 header h1 {
     padding: 1rem;
 }
@@ -26,6 +30,8 @@ nav {
     margin: 1rem 0 0;
     display: flex;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 nav a {
@@ -34,11 +40,14 @@ nav a {
     text-align: center;
     /*border: 1px solid black;*/
     color: black;
+    font-weight: 100;
     padding: 1rem;
+    border-radius: 20px;
 }
 
 nav a:hover {
     background-color: rgba(255 69 0 / 0.7);
+    font-weight: 700;
 }
 
 footer {
@@ -56,4 +65,5 @@ main {
     grid-column: 2/3;
     background-color: lightgoldenrodyellow;
     padding: 1rem;
+    border: 5px dotted orange;
 }
