@@ -1,7 +1,7 @@
 /*
 Author: Esteban Rubén Mangas Calva
 W01 Assignment: Home Page
-11/13/2024
+09/11/2025
 Styles for my home page
 */
 
@@ -23,21 +23,43 @@ footer {
     background-color: rgb(240, 128, 128);
 }
 
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+#course-title {
     font-family: "Comfortaa", sans-serif;
 }
 
+#course-title {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 700;
+    margin: auto 2rem;
+    padding: 0 1rem;
+}
+
 h1 {
-    padding: 1rem;
+    display: block;
+    font-size: medium;
+    text-align: left;
+    margin: auto 2rem;
+    color: rgb(0, 0, 80);
 }
 
 nav {
-    background-color: rgb(255, 165, 0);
+    grid-column: 1 / 3;
+    background-color: rgb(255, 180, 43);
     max-width: 100vw;
     margin: 1rem 0 0;
     display: flex;
@@ -56,6 +78,7 @@ nav a {
 nav a:hover,
 li a:hover {
     background-color: rgba(255 69 0 / 0.7);
+    font-weight: 700;
 }
 
 footer {
@@ -110,7 +133,7 @@ ul {
     padding: 1rem 2rem;
     margin: auto;
     display: block;
-    text-align: justify;
+    text-align: left;
     /*border: 2px solid black;*/
     max-width: fit-content;
 
