@@ -1,10 +1,10 @@
-let input = document.querySelector("#favchap");
+const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
 button.addEventListener("click", () => {
     if (input.value.trim() !== "") {
-        let itemList = document.createElement("li");
+        const itemList = document.createElement("li");
         itemList.textContent = input.value;
 
         const deleteButton = document.createElement("button");
