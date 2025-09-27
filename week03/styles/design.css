@@ -1,11 +1,12 @@
-/** {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*/
+}
 
 body {
     font-family: Roboto, helvetica, sans-serif;
+    margin: 1rem;
 }
 
 header,
@@ -15,22 +16,35 @@ footer {
     margin: 0 auto;
 }
 
-marquee {
-    padding: 1rem;
+.banner {
+    padding: 1rem 0 2rem 0;
     background-color: #eee;
+    text-align: center;
 }
 
 h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
 }
 
 h2 {
     color: navy;
-    text-align: center;
+    text-align: left;
+    grid-column: 1 / 3;
+}
+
+h3 {
+    padding: 0.5rem;
+}
+
+section {
+    padding: 1rem;
 }
 
 article p {
@@ -38,13 +52,15 @@ article p {
 }
 
 .callout {
-    color: #777;
-    background-color: #702963;
+    color: rgb(0, 0, 30);
+    background-color: rgb(255, 160, 122);
+    grid-column: 1 / 3;
+    padding: 1rem;
 }
 
 footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
-    text-align: right;
+    text-align: left;
 }
