@@ -1,0 +1,109 @@
+:root {
+    --palette-first-color: rgb(93,8,101);
+    --palette-second-color: rgb(250, 232, 87);
+    --palette-third-color: rgb(241, 128, 24);
+    --background: rgba(237, 49, 150, 0.3);
+    --first-color-transparency: rgba(93, 8, 101, 0.7);
+    --second-color-transparency: rgba(250, 232, 87, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Titillium Web", serif;
+    background-color: var(--background);
+}
+
+header,
+main,
+footer,
+table {
+    max-width: 550px;
+    margin: auto;
+    padding: 1rem;
+}
+
+header,
+footer {
+    background-color: var(--palette-third-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    background-color: var(--palette-first-color);
+    color: white;
+}
+
+.weather {
+    background-color: var(--palette-second-color);
+}
+
+.icon {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Comforta", sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+    header,
+    footer,
+    main {
+        max-width: 100%;
+    }
+    
+    header,
+    footer {
+        
+        padding: 1rem;
+    }
+
+    main {
+        padding: 0.5rem 0;
+    }
+
+    .data {
+        position: absolute;
+        width: 300px;
+        top: 6rem;
+        left: 1rem;
+        background-color: var(--first-color-transparency);
+    }
+
+    .weather {
+        position: absolute;
+        width: 300px;
+        top: 16rem;
+        right: 1rem;
+        background-color: var(--second-color-transparency);
+    }
+
+    .hero img {
+        max-height: 500px;
+        max-width: 1600px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .newicon::after {
+        content: "⛅";
+    }
+}
