@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals: Picture Album - Esteban Rubén Mangas Calva. Picture Album page of Temples with a responsive layout and a hamburguer menu.">
+    <meta name="author" content="Esteban Rubén Mangas Calva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preload" fetchpriority="high" as="image" href="images/queretaro_mexico_temple.webp" type="image/webp">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu" aria-labelledby="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="subtitle">Home</h2>
+        <div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Esteban Rubén Mangas Calva | México</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
