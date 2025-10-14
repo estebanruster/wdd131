@@ -1,0 +1,89 @@
+:root {
+    --SMC-first-color: rgb(250, 176, 214);
+    --SMC-second-color: rgb(128, 208, 205);
+    --SMC-contrast-color: rgb(255, 255, 255);
+    --SMC-headings-font: 'Comic Relief';
+    --SMC-text-font: 'Delius';
+    --SMC-backup-font: sans-serif;
+    --some-border: 3px solid gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--SMC-text-font), var(--SMC-backup-font);
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+#first {
+    background-color: var(--SMC-first-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--SMC-headings-font);
+    padding: 1rem;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main,
+#contrast {
+    background-color: var(--SMC-contrast-color);
+}
+
+main {
+    text-align: center;
+}
+
+div {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+p,
+img {
+    padding: 1rem;
+}
+
+ul {
+    background-color: var(--SMC-second-color);
+    padding: 1rem;
+}
+
+li {
+    margin: 1rem;
+}
+
+#first,
+#second,
+#contrast {
+    border: var(--some-border);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#second,
+p,
+.typo {
+    background-color: var(--SMC-second-color);
+}
+
+.wire {
+    max-width: 100%;
+}
