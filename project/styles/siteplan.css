@@ -1,6 +1,8 @@
 :root {
     --SMC-first-color: rgb(250, 176, 214);
+    --SMC-first-transparency: rgba(250, 176, 214, 0.8);
     --SMC-second-color: rgb(128, 208, 205);
+    --SMC-second-transparency: rgba(128, 208, 205, 0.8);
     --SMC-contrast-color: rgb(255, 255, 255);
     --SMC-headings-font: 'Comic Relief';
     --SMC-text-font: 'Delius';
@@ -13,6 +15,40 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--SMC-text-font), var(--SMC-backup-font);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header,
+footer,
+main {
+    max-width: 640px;
+    text-align: center;
+    /*border: 1px solid black;*/
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.logo {
+    grid-column: 1/2;
+}
+
+h1 {
+    grid-column: 2/3;
+}
+
+nav {
+    grid-column: 1/4;
+    grid-row: 2/3;
 }
 
 header,
@@ -37,9 +73,49 @@ h6 {
     padding: 1rem;
 }
 
-header {
-    padding: 1rem;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--SMC-second-color);
+}
+
+.navigation a {
+    text-decoration: none;
+    display: none;
     text-align: center;
+    /*border: 1px solid black;*/
+    color: black;
+    padding: 1rem;
+}
+
+.navigation a:hover {
+    background-color: var(--SMC-contrast-color);
+    font-weight: bolder;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: none;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+.open a {
+    display: block;
 }
 
 main,
@@ -51,9 +127,12 @@ main {
     text-align: center;
 }
 
-div {
-    margin: 1rem;
-    padding: 1rem;
+section {
+    padding: 1rem 0 1rem 0;
+}
+
+.bulletin h4 {
+    background-color: var(--SMC-second-color);
 }
 
 p,
@@ -61,13 +140,13 @@ img {
     padding: 1rem;
 }
 
-ul {
-    background-color: var(--SMC-second-color);
-    padding: 1rem;
+footer {
+    text-align: center;
 }
 
-li {
-    margin: 1rem;
+footer p {
+    padding: 0;
+    background-color: var(--SMC-first-color);
 }
 
 #first,
@@ -86,4 +165,56 @@ p,
 
 .wire {
     max-width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+
+    header,
+    footer,
+    main {
+        max-width: 100%;
+        /*border: 1px solid black;*/
+        
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    li {
+        margin: auto;
+        width: 100%;
+    }
+
+    .hero img {
+        width: 1000px;
+        display: block;
+        margin: auto;
+    }
+
+    #welcome {
+        position: absolute;
+        width: 500px;
+        top: 25rem;
+        left: 3rem;
+    }
+
+    #welcome h3 {
+        background-color: var(--SMC-first-transparency);
+    }
+
+    #welcome p {
+        background-color: var(--SMC-second-transparency);
+    }
 }

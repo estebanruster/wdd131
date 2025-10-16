@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Mangas Creations home page</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals: Project - Esteban Rubén Mangas Calva. Index/home page for SMC site.">
+    <meta name="author" content="Esteban Rubén Mangas Calva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delius&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" loading="lazy" src="images/SMC-simplified-logo.webp" alt="Sara Mangas Creations Logo."
+            width="120">
+        <h1>Sara Mangas Creations</h1>
+        <button type="button" id="menu" aria-labelledby="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="catalogue">Catalogue</a></li>
+                <li><a href="#" id="contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="heading">Home</h2>
+        <picture class="hero">
+            <source srcset="images/hero-large.webp" media="(min-width: 640px)">
+            <img loading="lazy" src="images/hero.webp" alt="Hero image; making of the products." width="400" height="500">
+        </picture>
+        <section id="welcome">
+            <h3>You imagine it, we create it!</h3>
+            <p>Welcome to Sara Mangas Creations. From personalized stationery to gifts; for your party or event; helping
+                people and business. Here you will find a creative solution made to fit your creativity and needs.</p>
+        </section>
+        <section class="bulletin">
+            <h3>What is trend?</h3>
+            <div class="new">
+                <h4>New site for SMC is here</h4>
+                <p>From Facebook, Instagram, Whatsapp and Linkedin; now we have our official site. Check our catalogue
+                    and the things we have prepared for the site launch.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Esteban Rubén Mangas Calva | México</p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
