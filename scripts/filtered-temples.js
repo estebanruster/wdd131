@@ -5,7 +5,7 @@ const subtitle = document.querySelector("#subtitle");
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
-})
+});
 
 const temples = [
     {

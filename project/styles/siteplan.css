@@ -108,20 +108,38 @@ h6 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+#menuCatalogue {
+    position: relative;
+    bottom: 3.5rem;
+    left: 13rem;
+}
+
+#menu,
+#menuCatalogue {
     font-size: 2rem;
     width: 50px;
     height: 50px;
     border: 0;
     background: none;
+}
 
+#menuCatalogue img {
+    padding: 0;
 }
 
 #menu::before {
     content: "☰";
 }
 
-#menu.open::before {
+#menu.open::before,
+#menuCatalogue.open::before {
     content: "✖️";
+}
+
+#menuCatalogue.open img {
+    display: none;
 }
 
 .open a {
@@ -210,16 +228,31 @@ legend {
     padding: 1rem 0 1rem 0;
 }
 
-#radio label {
+#radio label,
+.template h4 {
     border: var(--some-border);
     display: block;
     text-align: center;
     margin: 0 0 1rem 0;
-    background-color: var(--SMC-first-transparency);
+    background-color: var(--SMC-first-color);
 }
 
 #submit {
     margin: 1rem 0 0 0;
+}
+
+#products {
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    background-color: var(--SMC-contrast-color);
+}
+
+.template {
+    background-color: var(--SMC-second-color);
 }
 
 @media screen and (min-width: 640px) {
@@ -232,7 +265,8 @@ legend {
         
     }
 
-    #menu {
+    #menu,
+    #menuCatalogue{
         display: none;
         /* hide hamburger button */
     }
@@ -311,5 +345,26 @@ legend {
     #submit {
         margin: 1rem auto;
         width: 400px;
+    }
+
+    #products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 50px;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .template {
+        display: block;
+        text-align: center;
+        margin: auto;
+        height: 500px;
+        width: 220px;
+        padding: 0.5rem;
+    }
+
+    .template img {
+        width: 100%;
     }
 }
