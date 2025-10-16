@@ -206,21 +206,57 @@ p,
     padding: 1rem;
 }
 
+.form input:required {
+    border-bottom: solid 6px red;
+}
+
+.form input:required:valid {
+    border-bottom: solid 6px green;
+}
+
 fieldset {
     padding: 1rem;
 }
 
-input {
+label {
+    display: block
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
+    border-radius: 6px;
     height: 50px;
     width: 100%;
     font-size: large;
     margin: 0 0 1rem 0;
+    border: var(--some-border);
+}
+
+form input[type="radio"] {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#radio label {
+    height: 50px;
+    font-size: large;
+}
+
+#radio {
+    padding: 0 1rem;
+}
+
+form label[for="message"] {
+    margin: 0;
 }
 
 textarea {
+    border-radius: 6px;
     width: 100%;
     font-size: large;
     padding: 0.5rem;
+    border: var(--some-border);
 }
 
 legend {
@@ -228,7 +264,6 @@ legend {
     padding: 1rem 0 1rem 0;
 }
 
-#radio label,
 .template h4 {
     border: var(--some-border);
     display: block;
@@ -239,6 +274,13 @@ legend {
 
 #submit {
     margin: 1rem 0 0 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: bold;
+    border: var(--some-border);
+    background-color: rgb(251, 196, 93);
 }
 
 #products {
@@ -313,7 +355,7 @@ table {
         max-width: 700px;
     }
 
-    input,
+    /*input,
     textarea {
         max-width: 600px;
         display: block;
@@ -340,12 +382,7 @@ table {
     #radio label {
         border: none;
         background-color: var(--SMC-second-color);
-    }
-
-    #submit {
-        margin: 1rem auto;
-        width: 400px;
-    }
+    }*/
 
     #products {
         display: grid;
