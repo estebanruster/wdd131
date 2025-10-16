@@ -177,8 +177,13 @@ p,
     max-width: 100%;
 }
 
+.form h3 {
+    border: var(--some-border);
+    text-align: center;
+}
+
 .form {
-    background-color: var(--SMC-second-transparency);
+    background-color: var(--SMC-second-color);
     text-align: left;
     padding: 1rem;
 }
@@ -203,6 +208,18 @@ textarea {
 legend {
     font-weight: bold;
     padding: 1rem 0 1rem 0;
+}
+
+#radio label {
+    border: var(--some-border);
+    display: block;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    background-color: var(--SMC-first-transparency);
+}
+
+#submit {
+    margin: 1rem 0 0 0;
 }
 
 @media screen and (min-width: 640px) {
@@ -256,5 +273,43 @@ legend {
 
     #welcome p {
         background-color: var(--SMC-second-transparency);
+    }
+
+    form {
+        max-width: 700px;
+    }
+
+    input,
+    textarea {
+        max-width: 600px;
+        display: block;
+        font-size: medium;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    #radio {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    #radio label,
+    #radio input {
+        align-self: center;
+        justify-self: center;
+        margin: 1rem;
+    }
+
+    #radio label {
+        border: none;
+        background-color: var(--SMC-second-color);
+    }
+
+    #submit {
+        margin: 1rem auto;
+        width: 400px;
     }
 }
