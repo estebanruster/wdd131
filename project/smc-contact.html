@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC contact form and info</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals: Project - Esteban Rubén Mangas Calva. Contact site that contains links to social media and a form to request a message back form SMC.">
+    <meta name="author" content="Esteban Rubén Mangas Calva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delius&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" loading="lazy" src="images/SMC-simplified-logo.webp" alt="Sara Mangas Creations Logo."
+            width="120">
+        <h1>Sara Mangas Creations</h1>
+        <button type="button" id="menu" aria-labelledby="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="smc-index.html" id="home">Home</a></li>
+                <li><a href="#" id="catalogue">Catalogue</a></li>
+                <li><a href="smc-contact.html" id="contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="heading">Contact us</h2>
+        <section class="form">
+            <h3>Product Inquiry</h3>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name* <input type="text" name="fname" required> </label>
+                    <label>Last Name* <input type="text" name="lname" required> </label>
+                    <label>Phone <input type="tel" name="phone" placeholder="123455"> </label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required> </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Product of interest</legend>
+                    <label><input type="radio" name="product" value="shirts"> Shirts</label>
+                    <label><input type="radio" name="product" value="notebooks & agendas"> Notebooks and Agendas</label>
+                    <label><input type="radio" name="product" value="thermos"> Thermos</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Write your message <textarea id="message" name="user-message" rows="3" cols="40" placeholder="What I want to know about the product is..."></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send message">
+            </form>
+        </section>
+        <section>
+            <h3>Looking for our social media?</h3>
+            <nav>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/share/1WufvU7VXa/" id="facebook"><img loading="lazy"
+                                src="images/facebook-icon.svg" width="80"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/saramangas_creaciones?igsh=eGoyb2N1eGdwMzcx"
+                            id="instagram"><img loading="lazy" src="images/instagram-icon.svg" width="80"></a></li>
+                    <li><a href="https://www.linkedin.com/in/smc-076329375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            id="linkedin"><img loading="lazy" src="images/linkedin-icon.svg" width="80"></a>
+                    </li>
+                    <li><a href="https://wa.me/5214423548436" id="whatsapp"><img loading="lazy"
+                                src="images/whatsapp-icon.svg" width="80"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Esteban Rubén Mangas Calva | México</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
