@@ -177,6 +177,34 @@ p,
     max-width: 100%;
 }
 
+.form {
+    background-color: var(--SMC-second-transparency);
+    text-align: left;
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    font-size: large;
+    margin: 0 0 1rem 0;
+}
+
+textarea {
+    width: 100%;
+    font-size: large;
+    padding: 0.5rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+}
+
 @media screen and (min-width: 640px) {
 
     header,
